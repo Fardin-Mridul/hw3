@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>MY HW</title>
+</head>
+<body>
+	<video width="420" height="340"  controls>
+  <source src="video/islam.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.
+</video>
+<h1>The var element</h1>
+
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+<h1>Semantic Elements in HTML</h1>
+<ol>
+	<li>form</li>
+	<li>table</li>
+	<li>article</li>
+	<li>heade</li>
+	<li>footer</li>
+	<li>nav</li>
+	<li>aside</li>
+	<li>time</li>
+    <li>mark</li>
+	<li>main</li>
+    <li>summury</li>
+    <li>figure</li>
+    <li>figcaption</li>
+    <li>details</li>
+</ol>
+<h1>The tr element</h1>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Class</th>
+		<th>Roll</th>
+	</tr>
+	<tr>
+        <td>Fardin</td>
+        <td>12</td> 
+        <td>453264</td>
+	</tr>
+	<tr>
+        <td>Farhan</td>
+        <td>12</td> 
+        <td>767264</td>
+	</tr>
+	<tr>
+        <td>Faruk</td>
+        <td>12</td> 
+        <td>453264</td>
+	</tr>
+</table>
+<h1>The u element</h1>
+<p>This is my <u>CAT</u></p>
+<h1>The template Element</h1>
+<p>Click the button below to display the hidden content from the template element.</p>
+<button onclick="showContent()">click bro</button>
+<template>
+  <h2>Chiken</h2>
+  <img src="image/food.jpg" width="214" height="204">
+</template>
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+<h1>The sub and sup elements</h1>
+<p>x<sup>2</sup>+y<sup>2</sup>+2<sub>ab</sub></p>
+<h1>The summary element</h1>
+<details>
+	<summary>Bangladesh</summary>
+	<p>The climate is everywhere warm and humid. Rainfall is plentiful, varying be­tween 70 inches (1,778 mm) annually in the west and 100 inches (2,540 mm) in the east; the regime controlled by the two monsoon seasons but most precipitation falls during the summer monsoons.
+
+Nature has also dealt harshly with Bangladesh. The nearly flat topography is subjected to annual flooding. To the south, the country lies open to the passage of tropical storms which periodically bring large scale destruction to the densely set­tled southern sections of the deltaic plains of the three big rivers: Padma (local name for Ganga), Jamuna (local name for Brahmaputra), and Meghna, an</p>
+</details>
+<h1>The strong element</h1>
+
+<p>This text is normal.</p>
+
+<p><strong>This text is important!</strong></p>
+<h1>The span element</h1>
+<p>My favourite color is <span style="color: black ;background: blue;">Black</span></p>
+<h1>The small element</h1>
+
+<p>Fardin Rahman</p>
+<p><small>Fardin Rahman</small></p>
+<h1>The select element</h1>
+
+  <label for="number">Select your number:</label>
+  <select name="number" id="number">
+    <option value="Bangladesh">017</option>
+    <option value="canada">782</option>
+    <option value="us">222</option>
+    <option value="india">999</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<h1>The label element</h1>
+
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>

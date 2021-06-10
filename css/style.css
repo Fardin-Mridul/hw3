@@ -1,0 +1,4 @@
+body{
+	background: linear-gradient(45deg,pink,blue); height: 500vh;
+}table,th,td{ border: white 1px solid; }
+h1{background: whitesmoke; color: darkblue; text-align: center; border-radius: 50px;}
